@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!--
+	Edited for personal use by Akhilrajan Vethirajan (v.akhilrajan@gmail.com)
+-->
+<html>
+	<head>
+		<title>Akhilrajan Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Hello! I am<br />
+						Akhilrajan</h1>
+						<p>A robotics graduate student at the University of Maryand, USA.<br/> A dedicated engineer who loves to solve 
+						complex problems through innovative feasible solutions.<br/>
+						I am currently working as a Research Assistant in the Robot Realization Lab at the Maryland Robotics Center.
+						<blockquote>
+							The best way to predict the future is to create it.
+						</blockquote>
+						
+						<a href="https://www.linkedin.com/in/akhilrajan/">Connect with me: @akhilrajan</a>
+						</a></p>
+						<ul class="actions">
+							<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Akhilrajan Vethirajan</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+							<ul class="icons">
+
+							<li><a href="https://www.linkedin.com/in/akhilrajan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Akhilrajan-V" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Project -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Featured Project</span>
+									<h2><a href="#">Autonomous Driving using DQN</a></h2>
+									<p>In this project a DQN trained controller controls a vehicle in the <a href="https://carla.org/">CARLA</a></CARLA> 
+										simulator environment enabling autonomous driving.
+									The DQN model learns an optimal policy that chooses the best vehicle speed and steering angle control command.<br />
+									</p>
+								</header>
+								<a href="#" class="image main"><img src="images/carla3.png" alt="" /></a>
+								<p><span class="image left"><img src="images/simulation.gif" alt="" /></span> 
+								The RGB camera data is fed to the Deep Neural Network built using the Xception architecture which outputs 3 Q-values. Each Q-value corresponds to an action the agent can take in the environment.
+								The agent takes an action in every step associated with highest Q-value. The Q-value update is governed by the Bellman Optimality equation while the exploration-exploitation is handled by Epsilon-Greedy algorithm. 
+
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/lavanyasureshkannan/DQN_CARLA" class="button large">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="https://drive.google.com/file/d/1aACYFWoEKdniMg12WVN5QuElQdWY7qzh/view?usp=sharing" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+							</article>
+
+						<!-- Projects -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="#">AR Tag Detection, Image superimpose and AR Cube projection<br />
+										</a></h2>
+									</header>
+									<a href="https://drive.google.com/file/d/1sI7ecA_CDnoxOU5vWGBy1FHUKwkh2Gbr/view?usp=sharing" class="image fit"><img src="images/cube_SS.png" alt="" /></a>
+									<p>In this project, an AR tag was detected in a video and an image was superimposed on it. Finally, a 3D cube was 
+										augmented on top of it.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View Project</a></li>
+									</ul>
+									<ul class="icons alt">
+										<li><a href="https://drive.google.com/file/d/1sI7ecA_CDnoxOU5vWGBy1FHUKwkh2Gbr/view?usp=sharing" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+									</ul>
+								</article>
+								
+								<article>
+									<header>
+										
+										<h2><a href="#">Lane Detection and Turn Prediction<br />
+										</a></h2>
+									</header>
+									<a href="https://drive.google.com/file/d/1pmeUvAdmHoVTQMh2VsuWwOmt2T-Bumat/view?usp=sharing" class="image fit"><img src="images/curve_detect.png" alt="" /></a>
+									<p>
+										The lane detetcion for autonomous vehicle using image processing techniques was implemented.
+										The turn radius of the current lane the vehicle is traveling on, is detected and displayed. The 
+										offset from the center of the lane is also detected to maintain the vehicle in the current lane.											
+									</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View Project</a></li>
+									</ul>
+									<ul class="icons alt">
+										<li><a href="https://drive.google.com/file/d/1pmeUvAdmHoVTQMh2VsuWwOmt2T-Bumat/view?usp=sharing" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										
+										<h2><a href="#">Search and Rescue Robots<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/SAR.png" alt="" /></a>
+									<p>In this project the search and rescue mission aiding robots were simulated.
+										Two turtlebot3 robots were simulated in a custom Gazebo environment. One robot acts as an explorer that autonomously navigates to multiple 
+										target locations and scans for	civilians (enacted by fiducial markers, AruCo tags). The second robot is the rescuer which autonomously
+										navigates to detected civilians in a prioritized order to aid and rescue them.  
+									</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Akhilrajan-V/Search_And_Rescue_Gazebo" class="button">View Project</a></li>
+									</ul>
+									<ul class="icons alt">
+										<li><a href="#" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+									</ul>
+								</article>
+								
+								<article>
+									<header>
+									
+										<h2><a href="#">Face recognition using CNN<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+									<p>
+										In this project, a convolutional neural network was designed to extract facial features from the two given
+										images. The network detects whether the two images belong to the same person or not. Dataset used for this 
+										project is the <a href="http://vis-www.cs.umass.edu/lfw/">LFW-dataset</a>   
+									</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View Project</a></li>
+									</ul>
+									<ul class="icons alt">
+										<li><a href="#" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+									
+										<h2><a href="#">Controllers for Double Pendulum on a Cart<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/double_pendulum.png" alt="" /></a>
+									<p>
+										Balancing two pendulums on top of a moving cart is a classic controls theory problem. Various controllers implemented
+										and analyzed were LQR, LQG, and LQI controllers. The Luenberger observer was also implemented for state estimation of the 
+										model.
+									</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View Project</a></li>
+									</ul>
+									<ul class="icons alt">
+										<li><a href="#" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+									
+										<h2><a href="#">A* Path planning for Differential Drive Robot<br />
+										</a></h2>
+									</header>
+									<a href="https://drive.google.com/file/d/1jPLDGjhEVGJmv3vbVF6zBqmSQ8EbIT0m/view?usp=sharing" class="image fit"><img src="images/ezgif.com-gif-maker.gif" alt="" /></a>
+									<p>
+										Balancing two pendulums on top of a moving cart is a classic controls theory problem. Various controllers implemented
+										and analyzed were LQR, LQG, and LQI controllers. The Luenberger observer was also implemented for state estimation of the 
+										model.
+									</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Akhilrajan-V/Astar_path_planning" class="button">View Project</a></li>
+									</ul>
+									<ul class="icons alt">
+										<li><a href="https://drive.google.com/file/d/1jPLDGjhEVGJmv3vbVF6zBqmSQ8EbIT0m/view?usp=sharing" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+									
+										<h2><a href="#">Refueling Robot Manipulator Arm<br />
+										</a></h2>
+									</header>
+									<a href="https://drive.google.com/file/d/1OrHhpGoBn2qK5oGbAFsT2hGMDXmJHmIB/view?usp=sharing" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<p>
+										A custom 6 Degree of Freedom robot manipulator arm was modelled in SolidWorks and deployed in Gazebo.
+										The forward and inverse kinematic equation to calculate the joint angles based on the end-effector position were
+										formulated. The robot unscrews the vehicle fuel tank lid and places it on the workbench.
+									</p>
+									<ul class="actions special">
+										<li><a href="" class="button small">View Project</a></li>
+									</ul>
+									<ul class="icons alt">
+										<li><a href="https://drive.google.com/file/d/1jPLDGjhEVGJmv3vbVF6zBqmSQ8EbIT0m/view?usp=sharing" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+									</ul>
+								</article>
+
+							</section>
+
+							
+							
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>7700 Adelphi Road #33<br />
+								Hyattsville, <br/> MD 20783</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(240) 828-0545</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto: v.akhilrajan@gmail.com">v.akhilrajan@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/akhilrajan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/Akhilrajan-V" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
