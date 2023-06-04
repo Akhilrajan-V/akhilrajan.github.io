@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Planning Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Akhilrajan Vethirajan</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+						<ul class="links">
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="CVprojects.html">Perception Projects</a></li>
+							<li class="active"><a href="Planning.html">Planning & Prediction Projects</a></li>
+							<li><a href="ML.html">ML Projects</a></li>
+							<li><a href="Gamedev.html">AR/VR GameDev</a></li>
+							<!-- <li><a href="#about_me">About Me</a></li> -->
+						</ul>
+
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/akhilrajan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Akhilrajan-V" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						
+						<section class="posts">
+
+							<article>
+								<header>
+								
+									<h2><a href="#">RRT Path Planner for 6DOF Manipulator ARM<br />
+									</a></h2>
+								</header>
+								<a href="https://youtu.be/HobVb2DzqRs" class="image fit"><img src="images/rrt_demo.gif" alt="" /></a>
+								<p>
+									Developed the RRT path planning algorithm for 6 DOF robot manipulator arm - URe10 from scratch. The work space was sampled and graphed based on URe10 configuration space.
+									The exploring tree is built application specific (pick and place) to obtain a quicker path to goal. Thus, joint limits were tuned to reach a predefined work space.        
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Akhilrajan-V/RRT-Manipulator-path_planner" class="button">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="https://youtu.be/HobVb2DzqRs" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+							</article>	
+
+							<article>
+								<header>
+								
+									<h2><a href="#">Motion Planning<br />
+									</a></h2>
+								</header>
+								<a href="https://drive.google.com/file/d/1AGsY38kbc_mUyVTMtRBH0WIBJ2gdY3U5/view?usp=drive_link" class="image fit"><img src="images/Planner_sim.gif" alt="" /></a>
+								<p>
+									Implemented a motion planning model based on GoogLeNet architecture, trained on the Lyft's Planning and Prediction Dataset. The model is capable of planning the motion of the ego vehicle
+									abiding to it's various contraints.
+									The base model is a GoogLeNet model that is pretrained. It is customized with multiple Fully Connected convolution layers at the output to meet the requirements. 
+									The input layer is also customized to match the output size of the rasterizer.    
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Akhilrajan-V/Motion-Planning" class="button">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="https://drive.google.com/file/d/1AGsY38kbc_mUyVTMtRBH0WIBJ2gdY3U5/view?usp=drive_link" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+								
+									<h2><a href="#">A* Path planner for Mobile Robot<br />
+									</a></h2>
+								</header>
+								<a href="https://drive.google.com/file/d/1jPLDGjhEVGJmv3vbVF6zBqmSQ8EbIT0m/view?usp=sharing" class="image fit"><img src="images/astar_turtlebot_sim.gif" alt="" /></a>
+								<p>
+									In this project, a 3D environment was converted into a 2D map to run a simple search based path planner. 
+									A star path planner calculates the optimal path by using the RPMs of the two wheels of the TurtleBot3 Burger robot as action set parameters.
+									A publisher sends the RPM values to a simulated robot to navigate to the desired goal in the 3D gazebo environment.
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Akhilrajan-V/Astar-Turtlebot3" class="button">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="https://drive.google.com/file/d/1jPLDGjhEVGJmv3vbVF6zBqmSQ8EbIT0m/view?usp=sharing" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+								
+									<h2><a href="#">Multi-Goal Probabilistic RoadMap(PRM)<br />
+									</a></h2>
+								</header>
+								<a href="https://drive.google.com/file/d/1-aYjEjjdbMb1lHekGhyVQi9Ot1yIfMFQ/view?usp=drive_link" class="image fit"><img src="images/Final_path.gif" alt="" /></a>
+								<p>
+									Developed and implemented a PRM planner for warehouse wheeled robots. The robots have to collect/place different items from various sections within the warehouse.
+									The developed PRM path planner uses a novel heuristic function called A* distance to find optimal path between two consecutive target locations. The final optimal path 
+									with each target/item location is obtained by solving Traveling Sales-person Problem (TSP). 
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Akhilrajan-V/Multiple-Goal-PRM" class="button">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="https://drive.google.com/file/d/1-aYjEjjdbMb1lHekGhyVQi9Ot1yIfMFQ/view?usp=drive_link" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+								
+									<h2><a href="#">Dijkstra Path planner for Wheeled Mobile Robot<br />
+									</a></h2>
+								</header>
+								<a class="image fit"><img src="images/dijkstra.gif" alt="" /></a>
+								<p>
+									In this project, a 3D environment was converted into a 2D map to run a simple search based path planner, the Dijkstra algorithm. The action sets are based on the directions 
+									the robot can take {Forward, Backward, Left, Right}. obstacles in the generated map are enlarged according to robot dimensions to avoid collision. 											
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Akhilrajan-V/Dijkstra_Pathfinding_Algorithm" class="button">View Project</a></li>
+								</ul>
+								<!-- <ul class="icons alt"> -->
+									<!-- <li><a href="https://drive.google.com/file/d/1jPLDGjhEVGJmv3vbVF6zBqmSQ8EbIT0m/view?usp=sharing" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li> -->
+								<!-- </ul> -->
+							</article>
+
+							<article>
+								<header>
+								
+									<h2><a href="#">Motion Prediction<br />
+									</a></h2>
+								</header>
+								<a href="https://drive.google.com/file/d/1zQpzi1d6MTcVcf1Q8naU1XEkKrvZcsQ3/view?usp=sharing" class="image fit"><img src="images/Googlenet2_output.gif" alt="" /></a>
+								<p>
+									A customized googLeNet model that performs motion prediction for all agents visible to the ego vehicle at a given point in time. 
+									The trained model predicts 5 seconds into the future. It is trained on Lyft's motion prediction dataset.        
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Akhilrajan-V/Motion-Prediction" class="button">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="https://drive.google.com/file/d/1zQpzi1d6MTcVcf1Q8naU1XEkKrvZcsQ3/view?usp=sharing" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									
+									<h2><a href="#">Search and Rescue Robots<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/SAR.png" alt="" /></a>
+								<p>In this project the search and rescue mission aiding robots were simulated.
+									Two turtlebot3 robots were simulated in a custom Gazebo environment. One robot acts as an explorer that autonomously navigates to multiple 
+									target locations and scans for	civilians (enacted by fiducial markers, AruCo tags). The second robot is the rescuer which autonomously
+									navigates to detected civilians in a prioritized order to aid and rescue them.  
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Akhilrajan-V/Search_And_Rescue_Gazebo" class="button">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+							</article>
+						
+						</section>
+					
+
+						<footer>
+							<section>
+								<div class="box" id="coonect">
+								
+									<h2>Connect with me</h2>
+										<ul class="icons">
+										
+											<li><a href="https://www.linkedin.com/in/akhilrajan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+											<li><a href="https://github.com/Akhilrajan-V" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										</ul>
+								</div>
+							</section>
+						</footer>
+					</div>
+				
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

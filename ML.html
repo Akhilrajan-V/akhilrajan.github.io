@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Planning Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Akhilrajan Vethirajan</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+						<ul class="links">
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="CVprojects.html">Perception Projects</a></li>
+							<li><a href="Planning.html">Planning & Prediction Projects</a></li>
+							<li class="active"><a href="ML.html">ML Projects</a></li>
+							<li><a href="Gamedev.html">AR/VR GameDev</a></li>
+							<!-- <li><a href="#about_me">About Me</a></li> -->
+						</ul>
+
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/akhilrajan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Akhilrajan-V" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						
+						<section class="posts">
+
+							<article>
+								<header>
+								
+									<h2><a href="#">Motion Planning<br />
+									</a></h2>
+								</header>
+								<a href="https://drive.google.com/file/d/1AGsY38kbc_mUyVTMtRBH0WIBJ2gdY3U5/view?usp=drive_link" class="image fit"><img src="images/Planner_sim.gif" alt="" /></a>
+								<p>
+									Implemented a motion planning model based on GoogLeNet architecture, trained on the Lyft's Planning and Prediction Dataset. The model is capable of planning the motion of the ego vehicle
+									abiding to it's various contraints.
+									The base model is a GoogLeNet model that is pretrained. It is customized with multiple Fully Connected convolution layers at the output to meet the requirements. 
+									The input layer is also customized to match the output size of the rasterizer.    
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Akhilrajan-V/Motion-Planning" class="button">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="https://drive.google.com/file/d/1AGsY38kbc_mUyVTMtRBH0WIBJ2gdY3U5/view?usp=drive_link" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+							</article>
+
+							<article>
+								<h2>Autonomous Driving using DQN</h2>
+								<p>In this project a DQN trained controller controls a vehicle in the <a href="https://carla.org/">CARLA</a></CARLA> 
+									simulator environment enabling autonomous driving.
+									The DQN model learns an optimal policy that chooses the best vehicle speed and steering angle control command.<br />
+								</p>
+								</header>
+								<a href="#" class="image fit"><img src="images/simulation.gif" alt="" /></a>
+								<p><span class="image left"><img src="images/carla3.png" alt="" /></span> 
+								The RGB camera data is fed to the Deep Neural Network built using the Xception architecture which outputs 3 Q-values. Each Q-value corresponds to an action the agent can take in the environment.
+								The agent takes an action in every step associated with highest Q-value. The Q-value update is governed by the Bellman Optimality equation while the exploration-exploitation is handled by Epsilon-Greedy algorithm. 
+
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/lavanyasureshkannan/DQN_CARLA" class="button large">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="https://drive.google.com/file/d/1aACYFWoEKdniMg12WVN5QuElQdWY7qzh/view?usp=sharing" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+
+							</article>
+
+							<article>
+								<header>
+								
+									<h2><a href="#">Face recognition using CNN<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+								<p>
+									In this project, a convolutional neural network was designed to extract facial features from the two given
+									images. The network detects whether the two images belong to the same person or not. Dataset used for this 
+									project is the <a href="http://vis-www.cs.umass.edu/lfw/">LFW-dataset</a>   
+								</p>
+								<ul class="actions special">
+									<li><a href="#" class="button">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+								
+									<h2><a href="#">Classical Machine Learning Classifiers<br />
+									</a></h2>
+								</header>
+								<a href="" class="image fit"><img src="images/PCA-ML.png" alt="" /></a>
+								<p>
+									Traditional Machine Learning Classifiers like Bayes Classifier, K-NN, SVM, Kernel-SVM, Boosted SVM are implemented from 
+									scratch using mathematical formulation, without any prebuilt packages or libraries. A custom face image dataset is split into 
+									training, validation, and testing sub datasets. Label generation and preprocessing of data. PCA and MDA dimensionality reduction preprocessing 
+									techniques are applied for training optimization. The classifiers can detect the subject label(Face Recognition) or recognize a non-expressive 
+									face and an expressive face(such as a smile).   
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Akhilrajan-V/ML-Classifiers" class="button">View Project</a></li>
+								</ul>
+								<!-- <ul class="icons alt">
+									<li><a href="" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul> -->
+							</article>
+
+							<article>
+								<header>
+								
+									<h2><a href="#">Motion Prediction<br />
+									</a></h2>
+								</header>
+								<a href="https://drive.google.com/file/d/1zQpzi1d6MTcVcf1Q8naU1XEkKrvZcsQ3/view?usp=sharing" class="image fit"><img src="images/Googlenet2_output.gif" alt="" /></a>
+								<p>
+									A customized googLeNet model that performs motion prediction for all agents visible to the ego vehicle at a given point in time. 
+									The trained model predicts 5 seconds into the future. It is trained on Lyft's motion prediction dataset.        
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Akhilrajan-V/Motion-Prediction" class="button">View Project</a></li>
+								</ul>
+								<ul class="icons alt">
+									<li><a href="https://drive.google.com/file/d/1zQpzi1d6MTcVcf1Q8naU1XEkKrvZcsQ3/view?usp=sharing" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+								</ul>
+							</article>
+
+						</section>
+					
+
+						<footer>
+							<section>
+								<div class="box" id="coonect">
+								
+									<h2>Connect with me</h2>
+										<ul class="icons">
+										
+											<li><a href="https://www.linkedin.com/in/akhilrajan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+											<li><a href="https://github.com/Akhilrajan-V" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										</ul>
+								</div>
+							</section>
+						</footer>
+					</div>
+				
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

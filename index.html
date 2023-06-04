@@ -14,6 +14,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link href="assets/css/brands.css" rel="stylesheet">
+		<link href="assets/css/solid.css" rel="stylesheet">
+		<link href="assets/css/fontawesome.css" rel="stylesheet">
+		<style>
+			ul {
+			  list-style: none; /* Remove default bullets */
+			  text-align: center;
+			}
+			
+			li:before {
+			  content: ""; /* Hide the bullet */
+			  
+			}
+		</style>
 	</head>
 
 	<body class="is-preload">
@@ -25,9 +40,9 @@
 					<div id="intro">
 						<h1>Hello! I am<br />
 						Akhilrajan</h1>
-						<p>A robotics graduate student at the University of Maryand, USA.<br/> A dedicated engineer who loves to solve 
+						<p>A robotics engineering graduate, open to work as a full time employee in the field of robotics or automation.<br/> A dedicated engineer who loves to solve 
 						complex problems through innovative feasible solutions.<br/>
-						I am currently working as a Research Assistant at the Robotics And Autonomy Lab at the Maryland Robotics Center, CDCL Group.
+						I am currently working as a Graduate Research Assistant at the Maryland Robotics Center, CDCL Group.
 						<blockquote>
 							The best way to predict the future is to create it.
 						</blockquote>
@@ -49,9 +64,13 @@
 						
 						<ul class="links">
 
-							<li class="active"><a href="index.html">Projects</a></li>
-							<li><a href="generic.html">Research</a></li>
-							<li><a href="#about_me">About Me</a></li>
+							<li class="active"><a href="index.html">HOME</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="CVprojects.html">Perception Projects</a></li>
+							<li><a href="Planning.html">Planning & Prediction Projects</a></li>
+							<li><a href="ML.html">ML Projects</a></li>
+							<li><a href="Gamedev.html">AR/VR GameDev</a></li>
+							<!-- <li><a href="#about_me">About Me</a></li> -->
 						</ul>
 
 						<ul class="icons">
@@ -64,31 +83,89 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Project -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">Featured Project</span>
-									<h2><a href="#">Autonomous Driving using DQN</a></h2>
-									<p>In this project a DQN trained controller controls a vehicle in the <a href="https://carla.org/">CARLA</a></CARLA> 
-										simulator environment enabling autonomous driving.
-									The DQN model learns an optimal policy that chooses the best vehicle speed and steering angle control command.<br />
+							<section>
+								<h2>About Me</h2>
+								<p><span class="image left"><img src="images/me.jpg" alt="" /></span>Hello! I am Akhil, a robotics engineering graduate. I am <b>actively seeking full-time opportunities</b> in the field of 
+									robotics, path planning, perception, localization, ML/AI, and/or controls.<br> I am working as a Graduate Research Assistant (GRA) at the University of Maryland, College Park. 
+									My areas of research include path planning, SLAM, outdoor navigation, multi-robot collaborative decision making, ML, Deep Learning, and perception. 
+									I have extensive research and project experiences in the fields of Machine Learning, Planning and various Software package development (Autonomy Stack) such as 
+									navigation, perception based localization, swarm-robot interface and navigation stack. <br>Please feel free to connect with me on my socials. 
 									</p>
-								</header>
-								<a href="#" class="image main"><img src="images/carla3.png" alt="" /></a>
-								<p><span class="image left"><img src="images/simulation.gif" alt="" /></span> 
-								The RGB camera data is fed to the Deep Neural Network built using the Xception architecture which outputs 3 Q-values. Each Q-value corresponds to an action the agent can take in the environment.
-								The agent takes an action in every step associated with highest Q-value. The Q-value update is governed by the Bellman Optimality equation while the exploration-exploitation is handled by Epsilon-Greedy algorithm. 
+							</section>
+							<!-- <section> -->
+								<div class="box">
+									<h2>Skills</h2>
+									<ul class="skill-list">
+									<li><i class="fas fa-code"></i> Programming Languages: C, C++, C#, Python <i class="fab fa-python"></i></li><br>
+									<li><i class="fas fa-gamepad"></i> Game Development: Unity <i class="fab fa-unity"></i>, Unreal</li><br>
+									<li><i class="fa-solid fa-code-branch"></i> Version Control: Git <i class="fab fa-github"></i></li><br>
+									<li><i class="fab fa-docker"></i> Docker</li><br>
+									<li><i class="fas fa-palette"></i> VR - UI/UX Design</li><br>
+									<li><i class="fas fa-robot"></i> Robot Operating System (ROS/ROS2)</li><br>
+									<li><i class="fas fa-server"></i> Operating Systems: Windows <i class="fab fa-windows"></i>, Linux <i class="fab fa-linux">, </i> Ubuntu <i class="fab fa-ubuntu"></i></li><br>
+									<li><i class="fab fa-android"></i> Android App Development</li>
+									</ul>	
+								</div>
+							<!-- </section> -->
 
-								</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/lavanyasureshkannan/DQN_CARLA" class="button large">View Project</a></li>
-								</ul>
-								<ul class="icons alt">
-									<li><a href="https://drive.google.com/file/d/1aACYFWoEKdniMg12WVN5QuElQdWY7qzh/view?usp=sharing" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
-								</ul>
-							</article>
+							
+							<section>								
+								<div class="box">
+									<h2>Education</h2>
+									<p><span class="image left"><img src="images/ssn logo.png" alt="" width="65" height="65"/></span> <b> SSN College of Engineering <br> Bachelor of Engineering, Electronics and Communication Engineering </b> <br> 2016 - 2020 </p>
+									<p><span class="image left"><img src="images/University-of-Maryland-Logo.png" alt="" width="150" height="150" /></span> <b> University of Maryland <br> Master of Engineering, Robotics Engineering </b> <br> 2021 - 2023</p>
+								</div>
+							</section>
 
-						<!-- Projects -->
+							
+							<section>
+								<div class="box">
+									<h2>Projects</h2>
+									<h4>Checkout My Projects! </h4>
+									<ul>									
+										<li><a href="Planning.html" class="button primary large" style="width: 500px;"><i class="fas fa-route" style="font-size: 2em"></i>  Path Planning Projects</a></li><br>
+										<li><a href="CVprojects.html" class="button primary large" style="width: 500px;"><i class="fas fa-camera" style="font-size: 2em"></i>  Computer Vision Projects</a></li><br>
+										<li><a href="Gamedev.html" class="button primary large" style="width: 500px;"><i class="far fa-vr-cardboard" style="font-size: 2em"></i>  3D, AR/VR Projects</a></li><br>
+										<li><a href="ML.html" class="button primary large" style="width: 500px;"><i class="fas fa-border-none" style="font-size: 2em"></i> Machine Learning Projects</a></li>
+										
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<h2>Experience</h2>
+								<h3>Research Assistant, Robotics and Autonomy Lab - MRC (Mar 2022 – May 2023)</h3>
+								<l>
+									<li> Developed an outdoor localization stack for a quadruped robot using EKF sensor fusion of GPS, Odom, IMU 
+										data. </li>
+									<li> Deployed a GPS target – trajectory planner with no a priori map knowledge. </li>
+									<li> Dynamic Window Approach (DWA) planner with obstacle avoidance using Lidar, to follow targets. </li>
+									<li>Research on a novel map integration algorithm generated by aerial drones and ground mobility robots, combined map contains ground perspective view for areas occluded from drones </li> 
+								</l>
+								<br>
+								<h3>Team Lead, ABU Robocon (Oct 2019 - Apr 2020)</h3>
+								<l>
+									<li>Headed a 15-member team in developing a quadruped robot for the ABU Robocon competition 2019.</li>
+									<li>Modeled the quadruped robot using SolidWorks. Mechanical and electrical build of the robot.</li>
+									<li>Improved the SSD-mobilenet V2 object detection model using Transfer Learning to include detection of potholes and 
+									ropes. Achieved average accuracy of 85%.</li>
+									<li>Implemented the customized object detection model to detect dynamic obstacles and recompute trajectories using 
+									the local A* path planner</li>
+								</l>
+								<br>
+								<h3>Research Intern, Indian Institute of Technology, Indore (May 2019 - Jun 2019)</h3>
+								<l>
+									<li> Developed a PID controller for a Shape-Memory Alloy (SMA) Stewart platform using silver-copper metal
+									interfaces based on the analysis of 10 research papers on the implementation of electrical actuation of SMA
+									thin-films </li>
+									<li> Analyzed the actuation efficiency to be 25% higher than direct heat actuation using DAQ and LabVIEW
+									software, reducing the size of the components by more than 70%. </li>
+									<li>Contributing to a research paper on	implementing this actuation methodology in bio-inspired aviation robotics, currently in work.</li>
+								</l>
+							</section>
+							
+
+						<!-- Projects
 							<section class="posts">
 
 
@@ -308,27 +385,42 @@
 									</ul>
 								</article>
 
-							</section>
+							</section> -->
 
-							
-					<footer id="about_me">
-						<div class="box" id="about_me">
-						<section>
-							<p><span class="image left"><img src="images/me.jpg" alt="" /></span>Hello! I am Akhil, an aspiring robotics enthusiast. I am currently   
-								pursuing my master's degree in robotics engineering at the University of Maryland (UMD), USA. I also work as a Research Assistant at the Robotics and 
-								Autonomy Lab, UMD. My areas of research include path planning, SLAM, outdoor navigation, multi-robot collaborative decision making, ML, Deep Learning, and perception. 
-								I graduated with a Bachelor's degree in Electronics and Communication Engineering from SSN College of Engineering, Chennai, India in 2020. I have 
-								extensive research and project experiences in the fields of Machine Learning, Planning and various Software package development (Autonomy Stack) such as 
-								navigation, perception based localization, swarm-robot interface and navigation stack. 
-								</p>
-							<ul class="icons">
-							
-								<li><a href="https://www.linkedin.com/in/akhilrajan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/Akhilrajan-V" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section>
-						</div>	
-					</footer>
+					
+						<!-- <footer id="about_me">
+							<div class="box" id="about_me">
+								<section>
+									<p><span class="image left"><img src="images/me.jpg" alt="" /></span>Hello! I am Akhil, an aspiring robotics enthusiast. I am currently   
+										pursuing my master's degree in robotics engineering at the University of Maryland (UMD), USA. I also work as a Research Assistant at the Robotics and 
+										Autonomy Lab, UMD. My areas of research include path planning, SLAM, outdoor navigation, multi-robot collaborative decision making, ML, Deep Learning, and perception. 
+										I graduated with a Bachelor's degree in Electronics and Communication Engineering from SSN College of Engineering, Chennai, India in 2020. I have 
+										extensive research and project experiences in the fields of Machine Learning, Planning and various Software package development (Autonomy Stack) such as 
+										navigation, perception based localization, swarm-robot interface and navigation stack. 
+										</p>
+									<ul class="icons">
+									
+										<li><a href="https://www.linkedin.com/in/akhilrajan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/Akhilrajan-V" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</section>
+							</div>	
+						</footer> -->
+						<footer>
+							<section>
+								<div class="box" id="coonect">
+								
+									<h2>Connect with me</h2>
+										<ul class="icons">
+										
+											<li><a href="https://www.linkedin.com/in/akhilrajan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+											<li><a href="https://github.com/Akhilrajan-V" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										</ul>
+								</div>
+							</section>
+						</footer>
+					</div>
+				
 
 				<!-- Copyright -->
 					<div id="copyright">
